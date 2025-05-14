@@ -364,6 +364,41 @@ body.dark-theme{
   color: var(--title-color);
 }
 
+/* Resume download styling */
+.home__resume {
+  justify-self: center;
+  margin-top: 1.5rem;
+}
+
+.home__resume .button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--text-color-light);
+  border-radius: 3rem;
+  background: transparent;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  transition: all 0.3s;
+}
+
+.home__resume .button:hover {
+  background-color: var(--title-color);
+  color: var(--body-color);
+  transform: translateY(-0.25rem);
+}
+
+.home__resume .button i {
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.home__resume .button:hover i {
+  transform: translateY(-0.15rem);
+}
+
 .home__info{
   display: grid;
   row-gap: 2rem;
@@ -790,6 +825,11 @@ body.dark-theme{
     justify-self: center;
   }
 
+  .home__resume .button {
+    padding: 0.5rem 1rem;
+    font-size: var(--smaller-font-size);
+  }
+
 }
 
 /* For medium devices */
@@ -865,6 +905,10 @@ body.dark-theme{
   .contact__container{
     justify-content: center;
     column-gap: 8rem;
+  }
+
+  .home__resume {
+    margin-top: 2rem;
   }
   
 }
@@ -1106,6 +1150,15 @@ body.dark-theme{
 
   .footer__copy{
     margin-top: 5rem;
+  }
+
+  .home__resume .button {
+    padding: 1rem 2rem;
+    font-size: var(--normal-font-size);
+  }
+  
+  .home__resume .button i {
+    font-size: 1.5rem;
   }
 
 }
